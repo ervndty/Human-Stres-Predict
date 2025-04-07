@@ -3,9 +3,6 @@ Nama: Ervin Aditya
 
 Username dicoding: ervin_aditya24
 
-![human resources problems](https://user-images.githubusercontent.com/58927608/232183728-df31ce54-b58c-4163-a563-5df9d3daf167.jpg)
-
-[Sumber Gambar](https://blog.peoplespheres.com/en-us/what-problems-do-human-resources-managers-face-every-day)
 
 | | Deskripsi |
 | ----------- | ----------- |
