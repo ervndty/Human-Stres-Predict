@@ -1,7 +1,7 @@
-# Submission 1: Machine Learning Pipeline - Human Stress Prediction
-Nama: Maulana Muhammad
+# Submission 1: Machine Learning Pipeline - Human Stres Prediction
+Nama: Ervin Aditya
 
-Username dicoding: maoelana
+Username dicoding: ervin_aditya24
 
 ![human resources problems](https://user-images.githubusercontent.com/58927608/232183728-df31ce54-b58c-4163-a563-5df9d3daf167.jpg)
 
@@ -9,10 +9,10 @@ Username dicoding: maoelana
 
 | | Deskripsi |
 | ----------- | ----------- |
-| Dataset | [Human Stress Prediction](https://www.kaggle.com/datasets/kreeshrajani/human-stress-prediction) |
-| Masalah | Stres adalah reaksi seseorang baik secara fisik maupun emosional (mental/psikis) apabila ada perubahan dari lingkungan yang mengharuskan seseorang menyesuaikan diri. Stres adalah bagian alami dan penting dari kehidupan, tetapi apabila berat dan berlangsung lama dapat merusak kesehatan |
-| Solusi machine learning | Stress susah dilihat dari keseharian seseorang, oleh karena itu dengan machine learning dapat mengetahui apakah seseorang stress hanya dari ketikan seseorang yang dilakukan dimedia sosial |
-| Metode pengolahan | Pada data Human Stress Prediction, terdapat tujuh feature, tetapi yang digunakan pada proyek ini hanya feature text dan label, sehingga features selain itu akan dihapus, kemudian dilakukan split data training dan eval menjadi rasio 80:20, dan mengubah data feature menjadi lowercase serta feature label menjadi integer |
-| Arsitektur model | Arsitektur model yang digunakan yaitu model embedding dimana terdiri dari vectorize_layer, kemudian layer embedding dengan dimensi embedding yaitu 16, setelah itu layer AveragePooling1D karena data merupakan bentuk text, kemudian layer dense 64, 32 dengan activation relu dan sigmoid karena akan dilakukan klasifikasi antar dua label. Loss yang digunakan binary_crossentropy dengan optimizer Adam dan metrik BinaryAccuray |
-| Metrik evaluasi | Metrik evaluasi yang digunakan yaitu ExampleCount, AUC, FalsePositives, TruePositives, FalseNegatives, TrueNegatives, dan BinaryAccuracy |
-| Performa model | Evaluasi model diperoleh yaitu AUC sebesar 82%, kemudian example_count 575, dengan BinaryAccuracy 75%, dan loss sebesar 1.364. Untuk False Negatives 68, False Positive 75, True Negative 201 dan True Positive 231. Model yang telah dibuat dapat dilakukan peningkatan performa, karena model belum cukup baik karena BinaryAccuracy masih dibawah 80% |
+| Dataset | [Human Stres Prediction](https://www.kaggle.com/datasets/kreeshrajani/human-stress-prediction) |
+| Masalah | Stres merupakan reaksi fisik dan emosional seseorang terhadap perubahan lingkungan yang menuntut penyesuaian diri. Meskipun stres adalah hal yang wajar dalam kehidupan, jika terlalu berat dan berlangsung lama, dapat berdampak buruk pada kesehatan. |
+| Solusi machine learning | Karena stres sulit dikenali hanya dari aktivitas sehari-hari, machine learning dapat dimanfaatkan untuk mendeteksi tanda-tanda stres melalui pola ketikan seseorang di media sosial. |
+| Metode pengolahan | Dataset Human Stress Prediction memiliki tujuh fitur, namun dalam proyek ini hanya digunakan fitur text dan label. Fitur lainnya dihapus. Data kemudian dibagi menjadi 80% untuk pelatihan dan 20% untuk evaluasi. Teks diubah menjadi huruf kecil (lowercase), dan label dikonversi ke bentuk angka (integer). |
+| Arsitektur model | Model yang digunakan berbasis embedding yang terdiri dari: vectorize_layer, embedding layer dengan dimensi 16, dilanjutkan dengan AveragePooling1D karena data berbentuk teks, lalu dua dense layer berukuran 64 dan 32 dengan aktivasi ReLU, serta sigmoid untuk klasifikasi dua label. Digunakan loss function binary_crossentropy, optimizer Adam, dan metrik BinaryAccuracy. |
+| Metrik evaluasi | Metrik evaluasi yang digunakan meliputi: ExampleCount, AUC, FalsePositives, TruePositives, FalseNegatives, TrueNegatives, dan BinaryAccuracy. |
+| Performa model | Hasil evaluasi menunjukkan AUC sebesar 82%, example_count sebanyak 575, BinaryAccuracy sebesar 75%, dan loss sebesar 1.364. Nilai False Negative sebanyak 68, False Positive 75, True Negative 201, dan True Positive 231. Performa model masih bisa ditingkatkan karena akurasi belum mencapai 80%. |
